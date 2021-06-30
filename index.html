@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+   <nav id='navbar' >
+       <a href="#home">Home</a>
+       <a href="#charts">Charts</a>
+       <a href="#top 10">Top 10</a>
+       <a href="#new films">New Films</a>
+   </nav>
+   
+   <header id="banner">
+       <div class="random">
+    <h1>Random Film Finder</h1>
+        <p>Can't find a film to watch? <br>Let us chose one for you</p>
+        <button class="btn" onclick="generateName()">Random Film Finder</button>
+         <p id='findFilm'>Film Choice</p>
+        </div>
+        >
+   </header>
+   
+   <H1>Top Rated Films</H1>
+   <section id='main'>
+      
+       <figure>
+           <img src="./images/shawshank.jpg" alt="Shawshank Redemption">
+             <figcaption >The Shawshank Redemption (1994)</figcaption>
+       </figure>
+        
+       <figure>
+          <img src="./images/matrix.jpg" alt="The Matrix">
+            <figcaption>The Matrix (1999)</figcaption>
+       </figure>
+         <figure>
+             <img src="./images/darknightrises.jpg" alt="">
+             <figcaption>The Dark Knight Rises (2012)</figcaption>
+         </figure>
+         <figure>
+             <img src="./images/departed.jpg" alt="">
+             <figcaption>The Departed (2006)</figcaption>
+         </figure>
+         <figure>
+             <img src="./images/fightclub.jpg" alt="">
+             <figcaption>Fight Club (1999)</figcaption>
+         </figure>
+         <figure>
+             <img src="./images/future.jpg" alt="">
+             <figcaption>Back to the Future (1985)</figcaption>
+         </figure>
+         <figure>
+             <img src="./images/joker.jpg" alt="">
+             <figcaption>Joker (2019)</figcaption>
+         </figure>
+         <figure>
+             <img src="./images/terminator.jpg" alt="">
+             <figcaption>Terminator 2: Judgment Day (1991)</figcaption>
+         </figure>
+      
+   </section>
+    
+   <section id="rateFilm">
+      <div><h1>Rate a Film</h1></div>
+      <figure id='rateImg'>
+       <img src="./images/nobody.jpg" alt="nobody film">
+       <figcaption><p>Trapped in a mundane existence, Hutch Mansell, a glum, humble, workaday suburban father, is petrified when violent burglars break into his home, threatening his wife and children. In the wake of this soul-scarring incident, one good deed and several broken bones--and teeth--later, suddenly, imperfect Hutch summons up the courage to stand up for himself.</p></figcaption>
+    </figure> 
+    
+    <div class="rate">   
+       <input type="radio" id="good" name="fav_language" value="GOOD">
+    <label for="good">GOOD</label><br>
+    <input type="radio" id="Bad" name="fav_language" value="BAD">
+    <label for="css">BAD</label><br>
+    <input type="radio" id="ungly" name="fav_language" value="UGULY">
+    <label for="uguly">UGULY</label>
+   <div id="submit"> <button class="btn">SUBMIT</button> </div>
+    </div>
+   
+    <div> <p>A bystander who intervenes to help a woman being harassed by a group of men becomes the target of a vengeful drug lord.</p></div>
+   </section>
+
+   <article class="news">
+       <h1>Movie News</h1>
+       <p>Looks Like Guardians Of The Galaxy's Vol. 3 Is Getting Close To Filming As Karen Gillan Preps For Nebula's 
+           Lengthy Makeup Routine.
+           Guardians of the Galaxy Vol. 3 has had its fair share of setbacks. Originally set to hit theaters in 2020, the movie’s release was eventually pushed back to 2023 after director James Gunn was fired and rehired by Disney. While fans everywhere shed tears of despair, they don’t need to anymore because, based on a recent 
+           message from Nebual actress Karen Gillan, the movie is closer to filming than we might think.
+        </p>
+        
+    </article>
+
+   <section id="javaScript">
+     <div id="java1">
+         <h1 id="bgcolor">Click To Change elements background Color </h1>
+         <button class="btn" onclick="colorChange()">CLICK</button>
+     </div >
+     <div id="java2">
+         <button class="btn" onclick="changeElement()"> CLICK</button>
+         <p id="element"> Click to change this from P to h1 </p>
+     </div>
+
+     <div id="time"> 
+         <h2 id="timeNow" onmouseover="timeDate()">Hover for time</h2>
+        
+        </div>
+
+
+   </section>
+
+   <footer>Copyright 2021</footer>
+
+   <script src="script.js"></script>
+</body>
+</html>
